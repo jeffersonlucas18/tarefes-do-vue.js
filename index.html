@@ -8,16 +8,45 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 
 <body>
+
   <div id="app">
+  NOME: <input type="text" v-model="nome">
+  <br><br>
+  EMAIL: <input type="text" v-model="email">
+  <br><br>
+  NÚMERO: <input type="text" v-model="numero">
+  <br><br>
+  IDADE: <input type="text" v-model="idade">
+  <br><br>
+   ARIVALDO É BESTA? 
+  <br>
+  <input type="radio"  value="sim" v-model="resposta">SIM<br>
+  <input type="radio" value="não" v-model="resposta">NÃO
+  <br><br><br>
+  SUAS qualidades:
+  <select v-model="qualidades">
+    <option value="legal">legal</option>
+    <option value="besta">besta</option>
+    <option value="noiado">noiado</option>
+    <option value="apombaiado estilo arivaldo">apombaiado</option>
+  </select>
 
-    {{multiplicacao}}
+  <br><br><br><br>
 
-
-    <br>
-    <input type="number" v-model="message">
-    <input type="number" v-model="message1">
-
-    
+  NOME: {{nome}}
+  <br><br>
+  EMAIL: {{email}}
+  <br><br>
+  NÚMERO: {{numero}}
+  <br><br>
+  IDADE: {{idade}}
+  <br><br>
+  ARIVALDO É BESTA? {{resposta}}
+  <br><br>
+  SUAS QUALIDADES? {{qualidades}}
+  <br><br>
+  
+  <button type="submit" class="btn boostrap" v-:click="enviar()">Enviar</button>
 
 </div>
 
