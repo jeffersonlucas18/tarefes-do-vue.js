@@ -1,52 +1,9 @@
-
 var app = new Vue({
-  el: '#app' ,
+  el : '#status' ,
   data: {
-    nome: "",
-    email: "",
-    numero: "",
-    idade: "",
-    resposta: "",
-    qualidades: [],
-    usuarios: [
-      {nome: 'israel'},
-      {nome: 'jeff'},
-      {nome: 'caio'}
-    ]
-  },
-
-  filtres: {
-    toUpperCase(str) {
-      return str.toUpperCase();
-    }
-  },
-
-  methods: {
-    enviar() {
-      alert('enviado');
-    },
+  status: false,
+  titulo :"Atividades do Vue.js"
+  
   }
-  });
-
-
-    
-//   },
-//   computed: {
-
-//     multiplicacao: function () {
-    
-//      return  this.message * this.message1;
-
-//     }
-//   }
-
-// })
-
-// new Vue ({ 
-//   el: '#app' , 
-//   métodos: { 
-//     diga: function ( message ) { 
-//       alert (message) 
-//     } 
-//   } 
-// })
+  
+  }); 
